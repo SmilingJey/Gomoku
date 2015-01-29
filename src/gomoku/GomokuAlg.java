@@ -57,7 +57,7 @@ public class GomokuAlg {
         int n = (int) Math.round((count_max - 1) * Math.random());
         gobanPanel.goban[cost_max[n][0]][cost_max[n][1]] = stoneColor;
     }
-    
+
     private void getCostArray() {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -219,11 +219,10 @@ public class GomokuAlg {
                 + getLineCost(len_dr - 1, zakr_dr) * possibleFive(x, y, c, 3) + 1;
 
         /*System.out.println("x="+x+" y="+y+" c="+ c);
-        System.out.println("Горизонталь: "+get_cost(len_h-1,zakr_h)+" * "+can_five(x,y,c,0));
-        System.out.println("Вертикаль: "+get_cost(len_v-1,zakr_v)+" * "+can_five(x,y,c,1));
-        System.out.println("Диагональ \\: "+get_cost(len_dl-1,zakr_dl)+" * "+can_five(x,y,c,2));
-        System.out.println("Диагональ /: "+get_cost(len_dr-1,zakr_dr)+" * "+can_five(x,y,c,3));*/
-
+         System.out.println("Горизонталь: "+get_cost(len_h-1,zakr_h)+" * "+can_five(x,y,c,0));
+         System.out.println("Вертикаль: "+get_cost(len_v-1,zakr_v)+" * "+can_five(x,y,c,1));
+         System.out.println("Диагональ \\: "+get_cost(len_dl-1,zakr_dl)+" * "+can_five(x,y,c,2));
+         System.out.println("Диагональ /: "+get_cost(len_dr-1,zakr_dr)+" * "+can_five(x,y,c,3));*/
         cost = cost * cost;
         return cost;
     }

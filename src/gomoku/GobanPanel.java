@@ -111,7 +111,6 @@ public class GobanPanel extends JPanel {
                 goban[i][j] = currentStone;
                 //if (currentStone == BLACK) currentStone = WHITE;
                 //else currentStone = BLACK;
-
                 gameEnd = Gomoku.getInstance().isGameEnd();
                 if (gameEnd == 0) {
                     Gomoku.getInstance().doMove(WHITE);
@@ -131,14 +130,12 @@ public class GobanPanel extends JPanel {
         drawBoard(graphics);
         drawStones(graphics);
         drawEndGame(graphics);
-
         g.drawImage(bufferImage, 0, 0, null);
     }
 
     private void drawBoard(Graphics2D g) {
-       // g.setColor(boardColor);
+        // g.setColor(boardColor);
         // g.fillRect(0, 0, this.getWidth(), this.getHeight());
-
         slatetp = new TexturePaint(boardTexture, new Rectangle(0, 0, 500, 500));
 
         g.setPaint(slatetp);
@@ -167,7 +164,6 @@ public class GobanPanel extends JPanel {
         g.fillOval(offset + cellSize * 3 - pointSize / 2, offset + cellSize * (size - 4) - pointSize / 2, pointSize, pointSize);
         g.fillOval(offset + cellSize * (size - 4) - pointSize / 2, offset + cellSize * 3 - pointSize / 2, pointSize, pointSize);
         g.fillOval(offset + cellSize * (size - 4) - pointSize / 2, offset + cellSize * (size - 4) - pointSize / 2, pointSize, pointSize);
-
     }
 
     private void drawStones(Graphics2D g) {
