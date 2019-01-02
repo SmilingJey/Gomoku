@@ -1,0 +1,8 @@
+MIDlet-1: Gomoku,/ru/jcod/gomoku/mobile/res/icon.png,ru.jcod.gomoku.mobile.Gomoku_mobile
+MIDlet-Jar-Size: 20903
+MIDlet-Jar-URL: Gomoku_mobile.jar
+MIDlet-Name: GomokuMobile
+MIDlet-Vendor: Jedy
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0
